@@ -9,5 +9,10 @@ public class MainItem {
         Item item1 = new Item();
         System.out.println("아이템명 : " + item1.getName());
         System.out.println("아이템가격 : " + item1.getPrice());
+
+        Item item2 = new Item("제왕의 검", 1000, 100);
+        System.out.println("아이템명 : " + item2.getName());
+        System.out.println("아이템가격 : " + item2.getPrice());
+        System.out.println("아이템파워 : " + item2.getPower());
     }
 }
