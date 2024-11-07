@@ -6,8 +6,8 @@ public class MainItem {
         System.out.println("아이템명 : " + item.getName());
         System.out.println("아이템가격 : " + item.getPrice());
 
-        Item excalibur = new Item();
-        System.out.println("아이템명 : " + excalibur.getName());
-        System.out.println("아이템가격 : " + excalibur.getPrice());
+        Item item1 = new Item();
+        System.out.println("아이템명 : " + item1.getName());
+        System.out.println("아이템가격 : " + item1.getPrice());
     }
 }
