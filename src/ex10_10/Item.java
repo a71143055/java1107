@@ -4,7 +4,10 @@ public class Item {
     private String Name;
     private int price;
 
-    public Item(String name, int price) {}
+    public Item(String name, int price) {
+        this.Name = name;
+        this.price = price;
+    }
 
     public String getName() {
         return Name;
