@@ -1,11 +1,12 @@
 package ex10_10;
 
 public class Item {
-    private String Name;
+    private String name;
     private int price;
+    private int power;
 
     public Item(String name, int price) {
-        this.Name = name;
+        this.name = name;
         this.price = price;
     }
 
@@ -14,8 +15,17 @@ public class Item {
         System.out.println("기본 생성자가 호출됨.");
     }
 
+    public Item(String name, int price, int power) {
+        this(name , price);
+        this.power = power;
+    }
+
+    public Item(String name) {
+        this.name = name;
+    }
+
     public String getName() {
-        return Name;
+        return name;
     }
 
     public int getPrice() {
@@ -23,10 +33,18 @@ public class Item {
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public void setPower(int power) {
+        this.power = power;
     }
 }
