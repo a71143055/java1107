@@ -9,6 +9,11 @@ public class Item {
         this.price = price;
     }
 
+    public Item() {
+        this("칼", 6000);
+        System.out.println("기본 생성자가 호출됨.");
+    }
+
     public String getName() {
         return Name;
     }
